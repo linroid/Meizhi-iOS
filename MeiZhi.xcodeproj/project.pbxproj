@@ -1,0 +1,456 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		86F543891B43AC8A00DCE289 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F543881B43AC8A00DCE289 /* main.m */; };
+		86F5438C1B43AC8A00DCE289 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F5438B1B43AC8A00DCE289 /* AppDelegate.m */; };
+		86F5438F1B43AC8A00DCE289 /* MeiZhi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 86F5438D1B43AC8A00DCE289 /* MeiZhi.xcdatamodeld */; };
+		86F543921B43AC8A00DCE289 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F543911B43AC8A00DCE289 /* MasterViewController.m */; };
+		86F543951B43AC8A00DCE289 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F543941B43AC8A00DCE289 /* DetailViewController.m */; };
+		86F543981B43AC8A00DCE289 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86F543961B43AC8A00DCE289 /* Main.storyboard */; };
+		86F5439A1B43AC8A00DCE289 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86F543991B43AC8A00DCE289 /* Images.xcassets */; };
+		86F5439D1B43AC8A00DCE289 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86F5439B1B43AC8A00DCE289 /* LaunchScreen.xib */; };
+		86F543A91B43AC8A00DCE289 /* MeiZhiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F543A81B43AC8A00DCE289 /* MeiZhiTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		86F543A31B43AC8A00DCE289 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 86F5437B1B43AC8A00DCE289 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 86F543821B43AC8A00DCE289;
+			remoteInfo = MeiZhi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		86F543831B43AC8A00DCE289 /* MeiZhi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeiZhi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		86F543871B43AC8A00DCE289 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86F543881B43AC8A00DCE289 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		86F5438A1B43AC8A00DCE289 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		86F5438B1B43AC8A00DCE289 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		86F5438E1B43AC8A00DCE289 /* MeiZhi.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MeiZhi.xcdatamodel; sourceTree = "<group>"; };
+		86F543901B43AC8A00DCE289 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		86F543911B43AC8A00DCE289 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		86F543931B43AC8A00DCE289 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		86F543941B43AC8A00DCE289 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		86F543971B43AC8A00DCE289 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		86F543991B43AC8A00DCE289 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		86F5439C1B43AC8A00DCE289 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		86F543A21B43AC8A00DCE289 /* MeiZhiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeiZhiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		86F543A71B43AC8A00DCE289 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86F543A81B43AC8A00DCE289 /* MeiZhiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeiZhiTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		86F543801B43AC8A00DCE289 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86F5439F1B43AC8A00DCE289 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		86F5437A1B43AC8A00DCE289 = {
+			isa = PBXGroup;
+			children = (
+				86F543851B43AC8A00DCE289 /* MeiZhi */,
+				86F543A51B43AC8A00DCE289 /* MeiZhiTests */,
+				86F543841B43AC8A00DCE289 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		86F543841B43AC8A00DCE289 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				86F543831B43AC8A00DCE289 /* MeiZhi.app */,
+				86F543A21B43AC8A00DCE289 /* MeiZhiTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		86F543851B43AC8A00DCE289 /* MeiZhi */ = {
+			isa = PBXGroup;
+			children = (
+				86F5438A1B43AC8A00DCE289 /* AppDelegate.h */,
+				86F5438B1B43AC8A00DCE289 /* AppDelegate.m */,
+				86F543901B43AC8A00DCE289 /* MasterViewController.h */,
+				86F543911B43AC8A00DCE289 /* MasterViewController.m */,
+				86F543931B43AC8A00DCE289 /* DetailViewController.h */,
+				86F543941B43AC8A00DCE289 /* DetailViewController.m */,
+				86F543961B43AC8A00DCE289 /* Main.storyboard */,
+				86F543991B43AC8A00DCE289 /* Images.xcassets */,
+				86F5439B1B43AC8A00DCE289 /* LaunchScreen.xib */,
+				86F5438D1B43AC8A00DCE289 /* MeiZhi.xcdatamodeld */,
+				86F543861B43AC8A00DCE289 /* Supporting Files */,
+			);
+			path = MeiZhi;
+			sourceTree = "<group>";
+		};
+		86F543861B43AC8A00DCE289 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				86F543871B43AC8A00DCE289 /* Info.plist */,
+				86F543881B43AC8A00DCE289 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		86F543A51B43AC8A00DCE289 /* MeiZhiTests */ = {
+			isa = PBXGroup;
+			children = (
+				86F543A81B43AC8A00DCE289 /* MeiZhiTests.m */,
+				86F543A61B43AC8A00DCE289 /* Supporting Files */,
+			);
+			path = MeiZhiTests;
+			sourceTree = "<group>";
+		};
+		86F543A61B43AC8A00DCE289 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				86F543A71B43AC8A00DCE289 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		86F543821B43AC8A00DCE289 /* MeiZhi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86F543AC1B43AC8A00DCE289 /* Build configuration list for PBXNativeTarget "MeiZhi" */;
+			buildPhases = (
+				86F5437F1B43AC8A00DCE289 /* Sources */,
+				86F543801B43AC8A00DCE289 /* Frameworks */,
+				86F543811B43AC8A00DCE289 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MeiZhi;
+			productName = MeiZhi;
+			productReference = 86F543831B43AC8A00DCE289 /* MeiZhi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		86F543A11B43AC8A00DCE289 /* MeiZhiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86F543AF1B43AC8A00DCE289 /* Build configuration list for PBXNativeTarget "MeiZhiTests" */;
+			buildPhases = (
+				86F5439E1B43AC8A00DCE289 /* Sources */,
+				86F5439F1B43AC8A00DCE289 /* Frameworks */,
+				86F543A01B43AC8A00DCE289 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				86F543A41B43AC8A00DCE289 /* PBXTargetDependency */,
+			);
+			name = MeiZhiTests;
+			productName = MeiZhiTests;
+			productReference = 86F543A21B43AC8A00DCE289 /* MeiZhiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		86F5437B1B43AC8A00DCE289 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "张林";
+				TargetAttributes = {
+					86F543821B43AC8A00DCE289 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					86F543A11B43AC8A00DCE289 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 86F543821B43AC8A00DCE289;
+					};
+				};
+			};
+			buildConfigurationList = 86F5437E1B43AC8A00DCE289 /* Build configuration list for PBXProject "MeiZhi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 86F5437A1B43AC8A00DCE289;
+			productRefGroup = 86F543841B43AC8A00DCE289 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				86F543821B43AC8A00DCE289 /* MeiZhi */,
+				86F543A11B43AC8A00DCE289 /* MeiZhiTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		86F543811B43AC8A00DCE289 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86F543981B43AC8A00DCE289 /* Main.storyboard in Resources */,
+				86F5439D1B43AC8A00DCE289 /* LaunchScreen.xib in Resources */,
+				86F5439A1B43AC8A00DCE289 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86F543A01B43AC8A00DCE289 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		86F5437F1B43AC8A00DCE289 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86F543951B43AC8A00DCE289 /* DetailViewController.m in Sources */,
+				86F543921B43AC8A00DCE289 /* MasterViewController.m in Sources */,
+				86F5438C1B43AC8A00DCE289 /* AppDelegate.m in Sources */,
+				86F543891B43AC8A00DCE289 /* main.m in Sources */,
+				86F5438F1B43AC8A00DCE289 /* MeiZhi.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86F5439E1B43AC8A00DCE289 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86F543A91B43AC8A00DCE289 /* MeiZhiTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		86F543A41B43AC8A00DCE289 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 86F543821B43AC8A00DCE289 /* MeiZhi */;
+			targetProxy = 86F543A31B43AC8A00DCE289 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		86F543961B43AC8A00DCE289 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				86F543971B43AC8A00DCE289 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		86F5439B1B43AC8A00DCE289 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				86F5439C1B43AC8A00DCE289 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		86F543AA1B43AC8A00DCE289 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		86F543AB1B43AC8A00DCE289 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		86F543AD1B43AC8A00DCE289 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MeiZhi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		86F543AE1B43AC8A00DCE289 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MeiZhi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		86F543B01B43AC8A00DCE289 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MeiZhiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MeiZhi.app/MeiZhi";
+			};
+			name = Debug;
+		};
+		86F543B11B43AC8A00DCE289 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MeiZhiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MeiZhi.app/MeiZhi";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		86F5437E1B43AC8A00DCE289 /* Build configuration list for PBXProject "MeiZhi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86F543AA1B43AC8A00DCE289 /* Debug */,
+				86F543AB1B43AC8A00DCE289 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86F543AC1B43AC8A00DCE289 /* Build configuration list for PBXNativeTarget "MeiZhi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86F543AD1B43AC8A00DCE289 /* Debug */,
+				86F543AE1B43AC8A00DCE289 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		86F543AF1B43AC8A00DCE289 /* Build configuration list for PBXNativeTarget "MeiZhiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86F543B01B43AC8A00DCE289 /* Debug */,
+				86F543B11B43AC8A00DCE289 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		86F5438D1B43AC8A00DCE289 /* MeiZhi.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				86F5438E1B43AC8A00DCE289 /* MeiZhi.xcdatamodel */,
+			);
+			currentVersion = 86F5438E1B43AC8A00DCE289 /* MeiZhi.xcdatamodel */;
+			path = MeiZhi.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 86F5437B1B43AC8A00DCE289 /* Project object */;
+}
