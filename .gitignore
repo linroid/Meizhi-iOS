@@ -41,3 +41,5 @@ Pods/
 # Carthage/Checkouts
 
 Carthage/Build
+.idea
+Podfile.lock
