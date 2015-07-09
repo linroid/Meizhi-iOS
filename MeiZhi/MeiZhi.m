@@ -11,53 +11,6 @@
 
 @implementation Meizhi
 
-- (instancetype)initWithURL:(NSString *)url date:(NSString *)date thumbWidth:(int)width thumbHeight:(int)height {
-	self = [super init];
-	if (self) {
-		_mid = date;
-		_url = url;
-		_thumbHeight = height;
-		_thumbWidth = width;
-	}
-	return self;
-
-}
-
-- (instancetype)initWithHTML:(NSString *)html date:(NSString *)date {
-	self = [super init];
-	if (self) {
-		_mid = date;
-
-		HTMLDocument *document = [HTMLDocument documentWithString:html];
-		HTMLElement *element = [document firstNodeMatchingSelector:@"img"];
-		if(!element) {
-			return self;
-		}
-		_url = element.attributes[@"src"];
-
-		//height:120px; width:120px
-		NSString *style = element.attributes[@"style"];
-		if(!style) {
-			return self;
-		}
-		NSRange heightRange = [style rangeOfString:@"height:"];
-		NSRange heightPxRange = [style rangeOfString:@"px;"];
-
-		if(heightRange.location<0){
-			return self;
-		}
-		int heightBegin = heightRange.location + heightRange.length;
-		int heightLength = heightPxRange.location - heightBegin;
-		NSRange heightIntRange = NSMakeRange(heightBegin, heightLength);
-		NSLog(@"%@", date);
-		self.thumbHeight = [[style substringWithRange:heightIntRange] intValue];
-
-		NSRange widthRange = [style rangeOfString:@"width:"];
-		NSRange widthIntRange = NSMakeRange(widthRange.location + widthRange.length, [style length] - 1 - (widthRange.location + widthRange.length + 1));
-		self.thumbWidth = [[style substringWithRange:widthIntRange] intValue];
-	}
-	return self;
-}
 
 - (NSString *)toGenerateString {
 	return [NSString stringWithFormat:@"[meizhis addObject:[[Meizhi alloc] initWithURL:\"%@\" date:\"%@\" thumbWidth:%d thumbHeight:%d]]",
@@ -128,5 +81,6 @@
 
 	return meizhis;
 }
+
 
 @end

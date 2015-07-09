@@ -22,10 +22,14 @@
 
 - (void)loadView {
 	[super loadView];
-	self.view = [[UIView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-
+	UIBlurEffect *blurEffect = [[UIBlurEffect alloc] init];
+	UIVisualEffectView *effectView = [[UIVisualEffectView alloc] initWithEffect:blurEffect];
+	effectView.frame = [[UIScreen mainScreen] bounds];
+//	self.view = [[UIView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+	self.view = effectView.contentView;
 	self.imageView = [[UIImageView alloc] init];
 	[self.view addSubview:self.imageView];
+	self.view.backgroundColor = [UIColor clearColor];
 	[self.imageView mas_makeConstraints:^(MASConstraintMaker *make) {
 		CGRect frame = [UIScreen mainScreen].bounds;
 		CGFloat width = frame.size.width;
@@ -38,7 +42,6 @@
 		make.height.mas_equalTo(height);
 		make.center.equalTo(self.view);
 	}];
-	self.imageView.backgroundColor = [UIColor blackColor];
 }
 
 

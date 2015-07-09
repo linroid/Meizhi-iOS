@@ -15,8 +15,10 @@
 		86F543951B43AC8A00DCE289 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F543941B43AC8A00DCE289 /* DetailViewController.m */; };
 		86F5439A1B43AC8A00DCE289 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86F543991B43AC8A00DCE289 /* Images.xcassets */; };
 		86F5439D1B43AC8A00DCE289 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86F5439B1B43AC8A00DCE289 /* LaunchScreen.xib */; };
-		86F543A91B43AC8A00DCE289 /* MeiZhiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F543A81B43AC8A00DCE289 /* MeiZhiTests.m */; };
+		86F543A91B43AC8A00DCE289 /* MeizhiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F543A81B43AC8A00DCE289 /* MeizhiTests.m */; };
 		86F543B41B43B0F000DCE289 /* Meizhi.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F543B31B43B0F000DCE289 /* Meizhi.m */; };
+		A9172E11F4D8FB8E11059710 /* MeizhiStore.m in Sources */ = {isa = PBXBuildFile; fileRef = A9172DB62B5901D07A235BC2 /* MeizhiStore.m */; };
+		A9172E34DBDE9CAF0C591273 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9172B529E476C2ECBE6ADD3 /* Localizable.strings */; };
 		F0D732FD83764891761C2778 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E4480226BDEF067AD32421D /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -43,16 +45,19 @@
 		86F543881B43AC8A00DCE289 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		86F5438A1B43AC8A00DCE289 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		86F5438B1B43AC8A00DCE289 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		86F5438E1B43AC8A00DCE289 /* MeiZhi.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MeiZhi.xcdatamodel; sourceTree = "<group>"; };
+		86F5438E1B43AC8A00DCE289 /* Meizhi.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Meizhi.xcdatamodel; sourceTree = "<group>"; };
 		86F543931B43AC8A00DCE289 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		86F543941B43AC8A00DCE289 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		86F543991B43AC8A00DCE289 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		86F5439C1B43AC8A00DCE289 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		86F543A21B43AC8A00DCE289 /* MeiZhiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeiZhiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		86F543A71B43AC8A00DCE289 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
-		86F543A81B43AC8A00DCE289 /* MeiZhiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeiZhiTests.m; sourceTree = "<group>"; };
+		86F543A81B43AC8A00DCE289 /* MeizhiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeizhiTests.m; sourceTree = "<group>"; };
 		86F543B21B43B0F000DCE289 /* Meizhi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Meizhi.h; sourceTree = "<group>"; };
 		86F543B31B43B0F000DCE289 /* Meizhi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Meizhi.m; sourceTree = "<group>"; };
+		A9172B529E476C2ECBE6ADD3 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		A9172CDDC33FD6833162FB0E /* MeizhiStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeizhiStore.h; sourceTree = "<group>"; };
+		A9172DB62B5901D07A235BC2 /* MeizhiStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeizhiStore.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +116,9 @@
 				86884EE41B43D0960012BD68 /* MeizhiCell.m */,
 				86884EE91B43DE530012BD68 /* MeizhiCollectionViewController.h */,
 				86884EEA1B43DE530012BD68 /* MeizhiCollectionViewController.m */,
+				A9172DB62B5901D07A235BC2 /* MeizhiStore.m */,
+				A9172CDDC33FD6833162FB0E /* MeizhiStore.h */,
+				A9172B529E476C2ECBE6ADD3 /* Localizable.strings */,
 			);
 			path = Meizhi;
 			sourceTree = "<group>";
@@ -127,7 +135,7 @@
 		86F543A51B43AC8A00DCE289 /* MeizhiTests */ = {
 			isa = PBXGroup;
 			children = (
-				86F543A81B43AC8A00DCE289 /* MeiZhiTests.m */,
+				86F543A81B43AC8A00DCE289 /* MeizhiTests.m */,
 				86F543A61B43AC8A00DCE289 /* Supporting Files */,
 			);
 			path = MeizhiTests;
@@ -242,6 +250,7 @@
 			files = (
 				86F5439D1B43AC8A00DCE289 /* LaunchScreen.xib in Resources */,
 				86F5439A1B43AC8A00DCE289 /* Images.xcassets in Resources */,
+				A9172E34DBDE9CAF0C591273 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +308,7 @@
 				86F5438C1B43AC8A00DCE289 /* AppDelegate.m in Sources */,
 				86F543891B43AC8A00DCE289 /* main.m in Sources */,
 				86F5438F1B43AC8A00DCE289 /* Meizhi.xcdatamodeld in Sources */,
+				A9172E11F4D8FB8E11059710 /* MeizhiStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,7 +316,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86F543A91B43AC8A00DCE289 /* MeiZhiTests.m in Sources */,
+				86F543A91B43AC8A00DCE289 /* MeizhiTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,9 +518,9 @@
 		86F5438D1B43AC8A00DCE289 /* Meizhi.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				86F5438E1B43AC8A00DCE289 /* MeiZhi.xcdatamodel */,
+				86F5438E1B43AC8A00DCE289 /* Meizhi.xcdatamodel */,
 			);
-			currentVersion = 86F5438E1B43AC8A00DCE289 /* MeiZhi.xcdatamodel */;
+			currentVersion = 86F5438E1B43AC8A00DCE289 /* Meizhi.xcdatamodel */;
 			path = Meizhi.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

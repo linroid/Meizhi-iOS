@@ -9,11 +9,11 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-@interface MeiZhiTests : XCTestCase
+@interface MeizhiTests : XCTestCase
 
 @end
 
-@implementation MeiZhiTests
+@implementation MeizhiTests
 
 - (void)setUp {
     [super setUp];

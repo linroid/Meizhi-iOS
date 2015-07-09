@@ -13,17 +13,18 @@
 #import "Meizhi.h"
 #import "DDCollectionViewFlowLayout.h"
 #import "DetailViewController.h"
+#import "MeizhiStore.h"
 
-
-@interface MeizhiCollectionViewController () <DDCollectionViewDelegateFlowLayout>
-@property(nonatomic, strong) NSMutableArray *meizhis;
-@property(nonatomic, strong) AFHTTPSessionManager *manager;
-@property(nonatomic, strong) NSDate *today;
-@property(nonatomic, strong) NSDateFormatter *formatter;
-@property(nonatomic, strong) NSMutableArray *heightArr;
+@interface MeizhiCollectionViewController () <DDCollectionViewDelegateFlowLayout>{
+	MeizhiStore *store;
+	NSMutableArray *meizhis;
+	AFHTTPSessionManager *manager;
+	NSDate *today;
+	NSDateFormatter *formatter;
+}
 @end
 
-static NSString *MeiZhiEndpoint = @"http://gank.io/";
+static NSString *MeizhiEndpoint = @"http://gank.io/";
 
 
 @implementation MeizhiCollectionViewController
@@ -47,7 +48,7 @@ static NSString *const reuseIdentifier = @"MeizhiCell";
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-	Meizhi *meizhi = self.meizhis[indexPath.row];
+	Meizhi *meizhi = meizhis[indexPath.row];
 	DetailViewController *detailViewController = [[DetailViewController alloc] init];
 	detailViewController.meizhi = meizhi;
 	[self.navigationController pushViewController:detailViewController animated:YES];
@@ -57,7 +58,6 @@ static NSString *const reuseIdentifier = @"MeizhiCell";
 
 	[super viewDidLoad];
 	self.navigationItem.title = @"妹纸.gank.io";
-	self.heightArr = [[NSMutableArray alloc] init];
 	self.collectionView.backgroundColor = [UIColor colorWithRed:0.93 green:0.93 blue:0.93 alpha:1];
 	// Uncomment the following line to preserve selection between presentations
 	// self.clearsSelectionOnViewWillAppear = NO;
@@ -65,65 +65,65 @@ static NSString *const reuseIdentifier = @"MeizhiCell";
 	// Register cell classes
 	[self.collectionView registerClass:[MeizhiCell class] forCellWithReuseIdentifier:reuseIdentifier];
 
-	self.meizhis = [[NSMutableArray alloc] init];
+	meizhis = [[NSMutableArray alloc] init];
 
-	self.formatter = [[NSDateFormatter alloc] init];
-	[self.formatter setTimeZone:[NSTimeZone localTimeZone]];
-	[self.formatter setDateFormat:@"yyyy/MM/dd"];
+	formatter = [[NSDateFormatter alloc] init];
+	[formatter setTimeZone:[NSTimeZone localTimeZone]];
+	[formatter setDateFormat:@"yyyy/MM/dd"];
 
-	self.today = [[NSDate alloc] init];
-
+	today = [[NSDate alloc] init];
 	NSDate *lastDay;
-	if ([self.meizhis count] == 0) {
-		lastDay = [self.formatter dateFromString:@"2015/05/25"];
+	manager = [[AFHTTPSessionManager alloc] initWithBaseURL:
+			[NSURL URLWithString:MeizhiEndpoint]];
+
+	manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+	store = [MeizhiStore sharedStore];
+	NSArray *savedMeizhis = [store allMeizhi];
+	meizhis = [savedMeizhis mutableCopy];
+
+	if ([meizhis count] == 0) {
+		lastDay = [formatter dateFromString:@"2015/03/30"];
 	} else {
-		Meizhi *newestMeiZhi = [self.meizhis lastObject];
-		lastDay = [self.formatter dateFromString:newestMeiZhi.mid];
+		Meizhi *newestMeiZhi = [meizhis firstObject];
+		lastDay = [formatter dateFromString:newestMeiZhi.mid];
 	}
-
-	self.manager = [[AFHTTPSessionManager alloc] initWithBaseURL:
-			[NSURL URLWithString:MeiZhiEndpoint]];
-
-	self.manager.responseSerializer = [AFHTTPResponseSerializer serializer];
-
 	[self loadData:lastDay];
 }
 
-- (void)loadData:(NSDate *)lastDay {
-	NSDate *thatDay = [lastDay dateByAddingTimeInterval:24 * 60 * 60];
-	if ([thatDay compare:self.today] < 0) {
+- (void)loadData:(NSDate *) lastDay {
+	NSDate *thatDay = [lastDay dateByAddingTimeInterval: 24*60*60];
+	if ([thatDay compare:today] < 0) {
 //		AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-		self.manager.responseSerializer = [AFHTTPResponseSerializer serializer];
-		NSString *dateString = [self.formatter stringFromDate:thatDay];
+		manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+		NSString *dateString = [formatter stringFromDate:thatDay];
 //		NSString *url = [NSString stringWithFormat: @"http://gank.io/%@", dateString];
-		NSURLSessionDataTask *task = [self.manager
+		NSURLSessionDataTask *task = [manager
 				GET:dateString
 		 parameters:nil
 			success:^(NSURLSessionDataTask *__unused task, id data) {
 				NSString *html = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-				Meizhi *meizhi = [[Meizhi alloc] initWithHTML:html date:dateString];
-				[self.meizhis insertObject:meizhi atIndex:0];
-				NSIndexPath *newRow = [NSIndexPath indexPathForRow:0
-														 inSection:0];
-				[self.collectionView insertItemsAtIndexPaths:@[newRow]];
-//				NSLog(@"[%@]Success: %@", thatDay, html);
-
+				Meizhi *meizhi = [[MeizhiStore sharedStore] newMeizhiFromHTML:html date:dateString];
+				if(meizhi!=nil) {
+					[meizhis insertObject:meizhi atIndex:0];
+					NSIndexPath *newRow = [NSIndexPath indexPathForRow:0
+															 inSection:0];
+					[self.collectionView insertItemsAtIndexPaths:@[newRow]];
+					NSLog(@"[%@]Fetch from Web success", thatDay);
+					[store saveChanges];
+				} else {
+					NSLog(@"[%@]解析失败", thatDay);
+				}
 				[self loadData:thatDay];
-
 			} failure:^(NSURLSessionDataTask *__unused task, NSError *error) {
-					//NSLog(@"[%@]Error: %@", thatDay, dateString);
+					NSLog(@"[%@]没有妹纸", thatDay);
 					[self loadData:thatDay];
 				}];
 
-//        [UIAlertView showAlertViewForTaskWithErrorOnCompletion:task delegate:nil];
-//        [self.refreshControl setRefreshingWithStateOfTask: task];
-		NSLog(@"%@", thatDay);
 	} else {
-		for (Meizhi * meizhi in self.meizhis) {
+		for (Meizhi * meizhi in meizhis) {
 			NSLog(@"%@\n", [meizhi toGenerateString]);
 		}
 	}
-
 }
 
 //-(CGSize) collectionView:(UICollectionView *)collectionView
@@ -140,11 +140,16 @@ static NSString *const reuseIdentifier = @"MeizhiCell";
 
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-	Meizhi *meizhi = self.meizhis[indexPath.row];
+	Meizhi *meizhi = meizhis[indexPath.row];
 
 	CGRect screenRect = [UIScreen mainScreen].bounds;
 	CGFloat width = screenRect.size.width / 2;
-	CGFloat height = meizhi.thumbHeight * (width * 1.0 / meizhi.thumbWidth) + 30;
+	double height;
+	if(meizhi.thumbHeight) {
+		height = meizhi.thumbHeight * (width * 1.0 / meizhi.thumbWidth) + 30;
+	} else {
+		height = width;
+	}
 
 	return CGSizeMake(width, height);
 }
@@ -173,12 +178,11 @@ static NSString *const reuseIdentifier = @"MeizhiCell";
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-	return self.meizhis.count;
+	return meizhis.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
 
-	NSLog(@"%@", NSStringFromSelector(_cmd));
 	MeizhiCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
 	if (cell == nil) {
 		cell = [[MeizhiCell alloc] init];
@@ -189,9 +193,21 @@ static NSString *const reuseIdentifier = @"MeizhiCell";
 }
 
 - (void)configureCell:(MeizhiCell *)cell atIndexPath:(NSIndexPath *)indexPath {
-	Meizhi *meiZhi = self.meizhis[indexPath.row];
-	[cell.thumbnailView sd_setImageWithURL:[NSURL URLWithString:meiZhi.url]];
-	cell.dateLabel.text = meiZhi.mid;
+	Meizhi *meizhi = meizhis[indexPath.row];
+	if(meizhi.thumbHeight&& meizhi.thumbWidth) {
+		[cell.thumbnailView sd_setImageWithURL:[NSURL URLWithString:meizhi.url]];
+	} else {
+		[cell.thumbnailView sd_setImageWithURL:[NSURL URLWithString:meizhi.url]
+							  placeholderImage:nil
+									   options:nil
+									 completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+										 meizhi.thumbHeight = image.size.height;
+										 meizhi.thumbWidth = image.size.width;
+										 [[MeizhiStore sharedStore] saveChanges];
+										 [self.collectionView reloadItemsAtIndexPaths:@[indexPath]];
+									 }];
+	}
+	cell.dateLabel.text = meizhi.mid;
 }
 
 #pragma mark <UICollectionViewDelegate>

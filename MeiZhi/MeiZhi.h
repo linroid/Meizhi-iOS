@@ -7,15 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+@import CoreData;
+@interface Meizhi : NSManagedObject
 
-@interface Meizhi : NSObject
+@property (nonatomic, retain) NSString * mid;
+@property (nonatomic, retain) NSString * url;
+@property (nonatomic) float thumbHeight;
+@property (nonatomic) float thumbWidth;
 
-@property (nonatomic, strong) NSString *mid;
-@property (nonatomic, strong) NSString *url;
-@property (nonatomic) int thumbWidth;
-@property (nonatomic) int thumbHeight;
--(instancetype) initWithURL: (NSString *)url date: (NSString *)date thumbWidth:(int) width thumbHeight: (int) height;
--(instancetype) initWithHTML: (NSString *)html date: (NSString *)date;
-+(NSArray *) meizhiFromOldData;
+//-(instancetype) initWithURL: (NSString *)url date: (NSString *)date thumbWidth:(int) width thumbHeight: (int) height;
+//-(instancetype) initWithHTML: (NSString *)html date: (NSString *)date;
+//+(NSArray *) meizhiFromOldData;
 -(NSString *) toGenerateString;
 @end
