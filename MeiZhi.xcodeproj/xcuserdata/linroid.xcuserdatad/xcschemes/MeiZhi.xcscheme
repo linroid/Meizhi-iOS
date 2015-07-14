@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "86F543821B43AC8A00DCE289"
-               BuildableName = "MeiZhi.app"
-               BlueprintName = "MeiZhi"
-               ReferencedContainer = "container:MeiZhi.xcodeproj">
+               BuildableName = "Meizhi.app"
+               BlueprintName = "Meizhi"
+               ReferencedContainer = "container:Meizhi.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "86F543A11B43AC8A00DCE289"
-               BuildableName = "MeiZhiTests.xctest"
-               BlueprintName = "MeiZhiTests"
-               ReferencedContainer = "container:MeiZhi.xcodeproj">
+               BuildableName = "MeizhiTests.xctest"
+               BlueprintName = "MeizhiTests"
+               ReferencedContainer = "container:Meizhi.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "86F543A11B43AC8A00DCE289"
-               BuildableName = "MeiZhiTests.xctest"
-               BlueprintName = "MeiZhiTests"
-               ReferencedContainer = "container:MeiZhi.xcodeproj">
+               BuildableName = "MeizhiTests.xctest"
+               BlueprintName = "MeizhiTests"
+               ReferencedContainer = "container:Meizhi.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "86F543821B43AC8A00DCE289"
-            BuildableName = "MeiZhi.app"
-            BlueprintName = "MeiZhi"
-            ReferencedContainer = "container:MeiZhi.xcodeproj">
+            BuildableName = "Meizhi.app"
+            BlueprintName = "Meizhi"
+            ReferencedContainer = "container:Meizhi.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -77,9 +77,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "86F543821B43AC8A00DCE289"
-            BuildableName = "MeiZhi.app"
-            BlueprintName = "MeiZhi"
-            ReferencedContainer = "container:MeiZhi.xcodeproj">
+            BuildableName = "Meizhi.app"
+            BlueprintName = "Meizhi"
+            ReferencedContainer = "container:Meizhi.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -96,9 +96,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "86F543821B43AC8A00DCE289"
-            BuildableName = "MeiZhi.app"
-            BlueprintName = "MeiZhi"
-            ReferencedContainer = "container:MeiZhi.xcodeproj">
+            BuildableName = "Meizhi.app"
+            BlueprintName = "Meizhi"
+            ReferencedContainer = "container:Meizhi.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -84,8 +84,8 @@ static NSString *const reuseIdentifier = @"MeizhiCell";
 	if ([meizhis count] == 0) {
 		lastDay = [formatter dateFromString:@"2015/03/30"];
 	} else {
-		Meizhi *newestMeiZhi = [meizhis firstObject];
-		lastDay = [formatter dateFromString:newestMeiZhi.mid];
+		Meizhi *newestMeizhi = [meizhis firstObject];
+		lastDay = [formatter dateFromString:newestMeizhi.mid];
 	}
 	[self loadData:lastDay];
 }
