@@ -57,7 +57,7 @@ static NSString *const reuseIdentifier = @"MeizhiCell";
 - (void)viewDidLoad {
 
 	[super viewDidLoad];
-	self.navigationItem.title = @"妹纸.gank.io";
+	self.navigationItem.title = NSLocalizedString(@"title", @"主页面标题");
 	self.collectionView.backgroundColor = [UIColor colorWithRed:0.93 green:0.93 blue:0.93 alpha:1];
 	// Uncomment the following line to preserve selection between presentations
 	// self.clearsSelectionOnViewWillAppear = NO;

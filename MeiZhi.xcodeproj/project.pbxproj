@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8629F9C01B553F86006E623E /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8629F9BF1B553F86006E623E /* Launch Screen.xib */; };
 		86884EE51B43D0960012BD68 /* MeizhiCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 86884EE41B43D0960012BD68 /* MeizhiCell.m */; };
 		86884EEB1B43DE530012BD68 /* MeizhiCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86884EEA1B43DE530012BD68 /* MeizhiCollectionViewController.m */; };
 		86F543891B43AC8A00DCE289 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F543881B43AC8A00DCE289 /* main.m */; };
@@ -14,11 +15,11 @@
 		86F5438F1B43AC8A00DCE289 /* Meizhi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 86F5438D1B43AC8A00DCE289 /* Meizhi.xcdatamodeld */; };
 		86F543951B43AC8A00DCE289 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F543941B43AC8A00DCE289 /* DetailViewController.m */; };
 		86F5439A1B43AC8A00DCE289 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86F543991B43AC8A00DCE289 /* Images.xcassets */; };
-		86F5439D1B43AC8A00DCE289 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86F5439B1B43AC8A00DCE289 /* LaunchScreen.xib */; };
 		86F543A91B43AC8A00DCE289 /* MeizhiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F543A81B43AC8A00DCE289 /* MeizhiTests.m */; };
 		86F543B41B43B0F000DCE289 /* Meizhi.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F543B31B43B0F000DCE289 /* Meizhi.m */; };
+		A91728E8A8EB8832B8250079 /* store.data in Resources */ = {isa = PBXBuildFile; fileRef = A91724238B8A3929E4F3A703 /* store.data */; };
+		A9172B94F807CA3791BC20AF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A917256572CF0DAB0A83CD3A /* Localizable.strings */; };
 		A9172E11F4D8FB8E11059710 /* MeizhiStore.m in Sources */ = {isa = PBXBuildFile; fileRef = A9172DB62B5901D07A235BC2 /* MeizhiStore.m */; };
-		A9172E34DBDE9CAF0C591273 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9172B529E476C2ECBE6ADD3 /* Localizable.strings */; };
 		F0D732FD83764891761C2778 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E4480226BDEF067AD32421D /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		19564E6C747450FB3B164184 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		4E4480226BDEF067AD32421D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FC7DD968AF179966F61AADF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		8629F9BF1B553F86006E623E /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
 		86884EE31B43D0960012BD68 /* MeizhiCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeizhiCell.h; sourceTree = "<group>"; };
 		86884EE41B43D0960012BD68 /* MeizhiCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeizhiCell.m; sourceTree = "<group>"; };
 		86884EE91B43DE530012BD68 /* MeizhiCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeizhiCollectionViewController.h; sourceTree = "<group>"; };
@@ -49,13 +51,13 @@
 		86F543931B43AC8A00DCE289 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		86F543941B43AC8A00DCE289 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		86F543991B43AC8A00DCE289 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		86F5439C1B43AC8A00DCE289 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		86F543A21B43AC8A00DCE289 /* MeizhiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeizhiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		86F543A71B43AC8A00DCE289 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		86F543A81B43AC8A00DCE289 /* MeizhiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeizhiTests.m; sourceTree = "<group>"; };
 		86F543B21B43B0F000DCE289 /* Meizhi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Meizhi.h; sourceTree = "<group>"; };
 		86F543B31B43B0F000DCE289 /* Meizhi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Meizhi.m; sourceTree = "<group>"; };
-		A9172B529E476C2ECBE6ADD3 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		A91721C407B2A1361DECEBF7 /* Base */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A91724238B8A3929E4F3A703 /* store.data */ = {isa = PBXFileReference; lastKnownFileType = file.data; path = store.data; sourceTree = "<group>"; };
 		A9172CDDC33FD6833162FB0E /* MeizhiStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeizhiStore.h; sourceTree = "<group>"; };
 		A9172DB62B5901D07A235BC2 /* MeizhiStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeizhiStore.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -107,7 +109,6 @@
 				86F543931B43AC8A00DCE289 /* DetailViewController.h */,
 				86F543941B43AC8A00DCE289 /* DetailViewController.m */,
 				86F543991B43AC8A00DCE289 /* Images.xcassets */,
-				86F5439B1B43AC8A00DCE289 /* LaunchScreen.xib */,
 				86F5438D1B43AC8A00DCE289 /* Meizhi.xcdatamodeld */,
 				86F543861B43AC8A00DCE289 /* Supporting Files */,
 				86F543B21B43B0F000DCE289 /* Meizhi.h */,
@@ -118,7 +119,9 @@
 				86884EEA1B43DE530012BD68 /* MeizhiCollectionViewController.m */,
 				A9172DB62B5901D07A235BC2 /* MeizhiStore.m */,
 				A9172CDDC33FD6833162FB0E /* MeizhiStore.h */,
-				A9172B529E476C2ECBE6ADD3 /* Localizable.strings */,
+				A91724238B8A3929E4F3A703 /* store.data */,
+				A917256572CF0DAB0A83CD3A /* Localizable.strings */,
+				8629F9BF1B553F86006E623E /* Launch Screen.xib */,
 			);
 			path = Meizhi;
 			sourceTree = "<group>";
@@ -248,9 +251,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86F5439D1B43AC8A00DCE289 /* LaunchScreen.xib in Resources */,
 				86F5439A1B43AC8A00DCE289 /* Images.xcassets in Resources */,
-				A9172E34DBDE9CAF0C591273 /* Localizable.strings in Resources */,
+				8629F9C01B553F86006E623E /* Launch Screen.xib in Resources */,
+				A91728E8A8EB8832B8250079 /* store.data in Resources */,
+				A9172B94F807CA3791BC20AF /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,12 +335,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		86F5439B1B43AC8A00DCE289 /* LaunchScreen.xib */ = {
+		A917256572CF0DAB0A83CD3A /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				86F5439C1B43AC8A00DCE289 /* Base */,
+				A91721C407B2A1361DECEBF7 /* Base */,
 			);
-			name = LaunchScreen.xib;
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

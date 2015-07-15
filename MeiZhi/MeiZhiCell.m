@@ -29,7 +29,18 @@
 
 		[self.contentView addSubview:container];
 		[container mas_makeConstraints:^(MASConstraintMaker *make) {
-			make.edges.mas_equalTo(self.contentView).insets(UIEdgeInsetsMake(8, 8, 0, 8));
+			make.edges.equalTo(self.contentView).insets(UIEdgeInsetsMake(8, 8, 0, 8));
+		}];
+
+
+		self.thumbnailView = [[UIImageView alloc] init];
+		self.thumbnailView.layer.cornerRadius = 2;
+//        self.thumbnailView.contentMode = UIViewContentModeScaleAspectFill;
+		[container addSubview:self.thumbnailView];
+		[self.thumbnailView mas_makeConstraints:^(MASConstraintMaker *make) {
+			make.top.equalTo(container);
+			make.width.equalTo(container);
+			make.centerX.equalTo(container);
 		}];
 
 		self.dateLabel  = [[UILabel alloc] init];
@@ -37,20 +48,11 @@
 		self.dateLabel.font = [UIFont systemFontOfSize:12];
         [container addSubview: self.dateLabel];
         [self.dateLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.bottom.mas_equalTo(container);
-            make.centerX.mas_equalTo(container);
+            make.top.equalTo(self.thumbnailView.mas_bottom).offset(4);
+            make.bottom.equalTo(container).offset(-4);
+            make.centerX.equalTo(container);
         }];
-        
-        self.thumbnailView = [[UIImageView alloc] init];
-		self.thumbnailView.layer.cornerRadius = 2;
-//        self.thumbnailView.contentMode = UIViewContentModeScaleAspectFill;
-        [container addSubview:self.thumbnailView];
-        [self.thumbnailView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.mas_equalTo(container);
-            make.width.mas_equalTo(container);
-            make.bottom.mas_equalTo(self.dateLabel.mas_top);
-            make.centerX.mas_equalTo(container);
-        }];
+
     }
     return self;
 }

@@ -35,21 +35,23 @@
 		NSURL *storeURL = [NSURL fileURLWithPath:path];
 		NSFileManager *fileManager = [NSFileManager defaultManager];
 		if (![fileManager fileExistsAtPath:path]) {
-			NSURL *defaultURL = [[NSBundle mainBundle] URLForResource:@"store" withExtension:@"data"];
-			NSLog(@"CoreData default store location: %@", defaultURL);
-			if([fileManager fileExistsAtPath:defaultURL]) {
-				[fileManager copyItemAtURL:defaultURL toURL:storeURL error:nil];
+			NSURL *bundleURL = [[NSBundle mainBundle] URLForResource:@"store" withExtension:@"data"];
+			NSLog(@"CoreData Bundle store location: %@", bundleURL);
+			if([fileManager fileExistsAtPath:[bundleURL path]]) {
+				NSLog(@"copying bundle store");
+				[fileManager copyItemAtURL:bundleURL toURL:storeURL error:nil];
 			}
 		}
 		NSLog(@"CoreData store location: %@", storeURL);
 		NSError *error = nil;
+		NSDictionary *options = @{NSMigratePersistentStoresAutomaticallyOption : @YES, NSInferMappingModelAutomaticallyOption : @YES};
 		if (![psc addPersistentStoreWithType:NSSQLiteStoreType
 							   configuration:nil
 										 URL:storeURL
-									 options:nil
+									 options:options
 									   error:&error]) {
 			@throw [NSException exceptionWithName:@"OpenFailure"
-										   reason:@[[error localizedDescription]]
+										   reason:[error localizedDescription]
 										 userInfo:nil];
 		}
 		self.context = [[NSManagedObjectContext alloc] init];
