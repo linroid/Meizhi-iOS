@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14E46" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Meizhi" representedClassName="Meizhi" syncable="YES">
+        <attribute name="mid" attributeType="String" syncable="YES"/>
+        <attribute name="thumbHeight" attributeType="Float" syncable="YES"/>
+        <attribute name="thumbWidth" attributeType="Float" syncable="YES"/>
+        <attribute name="url" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Meizhi" positionX="261" positionY="198" width="128" height="105"/>
+    </elements>
+</model>
