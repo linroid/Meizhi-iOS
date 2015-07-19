@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8629F9C01B553F86006E623E /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8629F9BF1B553F86006E623E /* Launch Screen.xib */; };
 		86884EE51B43D0960012BD68 /* MeizhiCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 86884EE41B43D0960012BD68 /* MeizhiCell.m */; };
 		86884EEB1B43DE530012BD68 /* MeizhiCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86884EEA1B43DE530012BD68 /* MeizhiCollectionViewController.m */; };
+		86ADBED31B5BF9D4005D4F3A /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86ADBED21B5BF9D4005D4F3A /* Launch Screen.xib */; };
 		86F543891B43AC8A00DCE289 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F543881B43AC8A00DCE289 /* main.m */; };
 		86F5438C1B43AC8A00DCE289 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F5438B1B43AC8A00DCE289 /* AppDelegate.m */; };
 		86F5438F1B43AC8A00DCE289 /* Meizhi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 86F5438D1B43AC8A00DCE289 /* Meizhi.xcdatamodeld */; };
@@ -37,11 +37,11 @@
 		19564E6C747450FB3B164184 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		4E4480226BDEF067AD32421D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FC7DD968AF179966F61AADF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		8629F9BF1B553F86006E623E /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
 		86884EE31B43D0960012BD68 /* MeizhiCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeizhiCell.h; sourceTree = "<group>"; };
 		86884EE41B43D0960012BD68 /* MeizhiCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeizhiCell.m; sourceTree = "<group>"; };
 		86884EE91B43DE530012BD68 /* MeizhiCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeizhiCollectionViewController.h; sourceTree = "<group>"; };
 		86884EEA1B43DE530012BD68 /* MeizhiCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeizhiCollectionViewController.m; sourceTree = "<group>"; };
+		86ADBED21B5BF9D4005D4F3A /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
 		86F543831B43AC8A00DCE289 /* Meizhi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meizhi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86F543871B43AC8A00DCE289 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		86F543881B43AC8A00DCE289 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -121,7 +121,7 @@
 				A9172CDDC33FD6833162FB0E /* MeizhiStore.h */,
 				A91724238B8A3929E4F3A703 /* store.data */,
 				A917256572CF0DAB0A83CD3A /* Localizable.strings */,
-				8629F9BF1B553F86006E623E /* Launch Screen.xib */,
+				86ADBED21B5BF9D4005D4F3A /* Launch Screen.xib */,
 			);
 			path = Meizhi;
 			sourceTree = "<group>";
@@ -252,7 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				86F5439A1B43AC8A00DCE289 /* Images.xcassets in Resources */,
-				8629F9C01B553F86006E623E /* Launch Screen.xib in Resources */,
+				86ADBED31B5BF9D4005D4F3A /* Launch Screen.xib in Resources */,
 				A91728E8A8EB8832B8250079 /* store.data in Resources */,
 				A9172B94F807CA3791BC20AF /* Localizable.strings in Resources */,
 			);

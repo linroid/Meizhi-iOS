@@ -22,10 +22,10 @@ PODS:
     - AFNetworking/NSURLSession
   - DDCollectionViewFlowLayout (0.5)
   - HTMLReader (0.8)
-  - Masonry (0.6.1)
-  - SDWebImage (3.7.2):
-    - SDWebImage/Core (= 3.7.2)
-  - SDWebImage/Core (3.7.2)
+  - Masonry (0.6.2)
+  - SDWebImage (3.7.3):
+    - SDWebImage/Core (= 3.7.3)
+  - SDWebImage/Core (3.7.3)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.0)
@@ -38,7 +38,7 @@ SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
   DDCollectionViewFlowLayout: 2a30960c74db147b3633f2d2a7e9e582fde5a12f
   HTMLReader: b4d19899a242c02e1ce4a2308584fe2a6bcb6f6b
-  Masonry: 4972309f2f134de9dd312f4dc4a21359b50e6caa
-  SDWebImage: 71b7cdc1d1721d6a82ed62889030225f2c249e29
+  Masonry: 362e8a1cc0beada4a4c4832d5e863da2a51533be
+  SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
 
 COCOAPODS: 0.37.2
