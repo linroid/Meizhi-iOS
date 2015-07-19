@@ -1,12 +1,12 @@
 //
-//  MeizhiCollectionViewController.m
+//  MeizhiCollectionVC.m
 //  Meizhi
 //
 //  Created by 张林 on 7/1/15.
 //  Copyright (c) 2015 张林. All rights reserved.
 //
 
-#import "MeizhiCollectionViewController.h"
+#import "MeizhiCollectionVC.h"
 #import "AFNetworking.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "MeizhiCell.h"
@@ -15,7 +15,7 @@
 #import "DetailViewController.h"
 #import "MeizhiStore.h"
 
-@interface MeizhiCollectionViewController () <DDCollectionViewDelegateFlowLayout>{
+@interface MeizhiCollectionVC () <DDCollectionViewDelegateFlowLayout>{
 	MeizhiStore *store;
 	NSMutableArray *meizhis;
 	AFHTTPSessionManager *manager;
@@ -27,7 +27,7 @@
 static NSString *MeizhiEndpoint = @"http://gank.io/";
 
 
-@implementation MeizhiCollectionViewController
+@implementation MeizhiCollectionVC
 
 static NSString *const reuseIdentifier = @"MeizhiCell";
 
@@ -119,10 +119,6 @@ static NSString *const reuseIdentifier = @"MeizhiCell";
 					[self loadData:thatDay];
 				}];
 
-	} else {
-		for (Meizhi * meizhi in meizhis) {
-			NSLog(@"%@\n", [meizhi toGenerateString]);
-		}
 	}
 }
 

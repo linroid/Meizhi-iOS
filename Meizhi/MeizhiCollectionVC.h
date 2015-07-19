@@ -1,5 +1,5 @@
 //
-//  MeizhiCollectionViewController.h
+//  MeizhiCollectionVC.h
 //  Meizhi
 //
 //  Created by 张林 on 7/1/15.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MeizhiCollectionViewController : UICollectionViewController
+@interface MeizhiCollectionVC : UICollectionViewController
 
 @end

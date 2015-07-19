@@ -7,8 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "DetailViewController.h"
-#import "MeizhiCollectionViewController.h"
+#import "MeizhiCollectionVC.h"
 
 @interface AppDelegate () <UISplitViewControllerDelegate>
 
@@ -21,7 +20,7 @@
     CGRect screenRect = [UIScreen mainScreen].bounds;
     self.window = [[UIWindow alloc] initWithFrame:screenRect];
     self.window.backgroundColor = [UIColor whiteColor];
-    MeizhiCollectionViewController *controller = [[MeizhiCollectionViewController alloc] init];
+    MeizhiCollectionVC *controller = [[MeizhiCollectionVC alloc] init];
     
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:controller];
     self.window.rootViewController = navController;

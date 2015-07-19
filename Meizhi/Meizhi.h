@@ -15,8 +15,4 @@
 @property (nonatomic) float thumbHeight;
 @property (nonatomic) float thumbWidth;
 
-//-(instancetype) initWithURL: (NSString *)url date: (NSString *)date thumbWidth:(int) width thumbHeight: (int) height;
-//-(instancetype) initWithHTML: (NSString *)html date: (NSString *)date;
-//+(NSArray *) meizhiFromOldData;
--(NSString *) toGenerateString;
 @end
